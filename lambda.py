@@ -68,3 +68,11 @@ sorted_students = sorted(students, key=lambda x: x[1])
 print(sorted_students)
 
 #3
+students=[{"name": "Dana", "grade": 85},{"name": "Eli", "grade": 92},{"name": "Noa", "grade": 78}] 
+sorted_students=sorted(students, key=lambda x:x['grade'])
+print(sorted_students)
+
+#4
+products = [{"name": "Pen", "price": 5, "amount": 10},{"name": "Book", "price": 40, "amount": 2},{"name": "Bag", "price": 80, "amount": 1}]
+sorted_products = sorted(products, key=lambda x:x['price'])
+print(sorted_products)
