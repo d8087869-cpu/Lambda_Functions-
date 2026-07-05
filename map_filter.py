@@ -30,3 +30,13 @@ print(result)
 products = [{"name": "Bread", "price": 8},{"name": "Milk", "price": 6},{"name": "Eggs", "price": 15}]
 result = list(map(lambda x : f"{x ["name"]} cost {x["price"]}" , products))
 print(result)
+#9
+players = [{"name": "Dana", "score": 70},{"name": "Yoni", "score": 85},{"name": "Rami", "score": 40}]
+result = list(map(lambda x :{'name': x['name'], "score":x["score"]+5},players))
+print(result)
+#10 
+orders = [{"id": 1, "item": "Book", "amount": 3, "price": 40},{"id": 2, "item": "Pen", "amount": 10, "price": 5},{"id": 3, "item": "Bag", "amount": 1, "price": 120}]
+result = list(map(lambda x : f"order {x['id']}:{x["item"]} total is {x["amount"]* x["price"]}" , orders))
+print(result)
+
+
