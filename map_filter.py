@@ -1,3 +1,4 @@
+'''
 #1
 numbers = [3, 7, 10, 15]
 result = list(map(lambda x:x +10 ,numbers))
@@ -38,5 +39,32 @@ print(result)
 orders = [{"id": 1, "item": "Book", "amount": 3, "price": 40},{"id": 2, "item": "Pen", "amount": 10, "price": 5},{"id": 3, "item": "Bag", "amount": 1, "price": 120}]
 result = list(map(lambda x : f"order {x['id']}:{x["item"]} total is {x["amount"]* x["price"]}" , orders))
 print(result)
+'''
 
 
+#filter exe 
+
+#1 
+numbers = [4, 7, 10, 13, 18, 21]
+result = list(filter(lambda x : x%2==0 , numbers))
+print(result)
+#2
+grades = [100, 55, 70, 40, 88, 59]
+result = list(filter(lambda x : x >= 60 , grades))
+print(result)
+#3
+words = ["dog", "elephant", "cat", "computer", "sun"]
+result = list(filter(lambda x : len(x)<= 3  , words))
+print(result)
+#4
+names = ["Adam", "Dana", "Amit", "Noa", "Alon"]
+result = list(filter(lambda x :len(x) > 0 and x[0] == "A" , names))
+print(result)
+#5 
+numbers = [-5, 3, 0, 12, -2, 8]
+result = list(filter(lambda x : x >0 , numbers))
+print(result)
+#6
+products = [{"name": "Book", "price": 40},{"name": "Bag", "price": 120},{"name": "Pen", "price": 5},{"name": "Shirt", "price": 60}]
+result = list(filter(lambda x :x["price"]<50 , products))
+print(result)
