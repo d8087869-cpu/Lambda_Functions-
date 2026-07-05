@@ -68,3 +68,27 @@ print(result)
 products = [{"name": "Book", "price": 40},{"name": "Bag", "price": 120},{"name": "Pen", "price": 5},{"name": "Shirt", "price": 60}]
 result = list(filter(lambda x :x["price"]<50 , products))
 print(result)
+#7
+users = [{"name": "Dana", "active": True},{"name": "Ron", "active": False},{"name": "Maya", "active": True},{"name": "Gil", "active": False}]
+result = list(filter(lambda x: x["active"], users))
+print(result)
+#8
+passwords = ["abc", "hello123", "Python2026", "pass", "GoodPass99"]
+result = list(filter(lambda x:len(x)>=8,passwords))
+print(result)
+#9 
+tasks = [
+{"title": "Clean room", "done": True, "priority": 2},
+{"title": "Study Python", "done": False, "priority": 1},
+{"title": "Play game", "done": False, "priority": 5},
+{"title": "Send email", "done": True, "priority": 1}]
+result = list(filter(lambda x : not x["done"]and x["priority"]<=3 , tasks))
+print(result)
+#10 
+students = [
+{"name": "Noa", "grade": 90, "attendance": 95},
+{"name": "Dan", "grade": 55, "attendance": 100},
+{"name": "Rina", "grade": 80, "attendance": 70},
+{"name": "Eli", "grade": 75, "attendance": 85}]
+result = list(filter(lambda x:x["grade"] >=70 and x["attendance"]>=80 , students))
+print(result)
