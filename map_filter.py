@@ -41,7 +41,11 @@ result = list(map(lambda x : f"order {x['id']}:{x["item"]} total is {x["amount"]
 print(result)
 '''
 
+
 '''
+
+
+
 #filter exe 
 
 #1 
@@ -91,6 +95,7 @@ students = [
 {"name": "Rina", "grade": 80, "attendance": 70},
 {"name": "Eli", "grade": 75, "attendance": 85}]
 result = list(filter(lambda x:x["grade"] >=70 and x["attendance"]>=80 , students))
+
 print(result)
 '''
 
@@ -113,3 +118,4 @@ print(result)
 #5
 # reduce when its a simply action to do like in a lambda func
 #for loop when more comlex action
+

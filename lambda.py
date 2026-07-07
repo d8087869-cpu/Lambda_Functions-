@@ -1,3 +1,4 @@
+'''
 # 1. Manager son price
 
 manger_son_price = lambda price ,is_maneger_son : price -price/100*20 if is_maneger_son else price +price/100*17
@@ -54,3 +55,24 @@ def ticket_price(age,is_student):
 print(ticket_price(10, False))
 print(ticket_price(20, True))
 print(ticket_price(20, False))       
+'''
+#self learn 
+#1 
+numbers = [5, 2, 9, 1, 7]
+numbers.sort()
+print(numbers)
+
+#2 
+students = [("Dana", 85),("Eli", 92),("Noa", 78)]
+sorted_students = sorted(students, key=lambda x: x[1])
+print(sorted_students)
+
+#3
+students=[{"name": "Dana", "grade": 85},{"name": "Eli", "grade": 92},{"name": "Noa", "grade": 78}] 
+sorted_students=sorted(students, key=lambda x:x['grade'])
+print(sorted_students)
+
+#4
+products = [{"name": "Pen", "price": 5, "amount": 10},{"name": "Book", "price": 40, "amount": 2},{"name": "Bag", "price": 80, "amount": 1}]
+sorted_products = sorted(products, key=lambda x:x['price'])
+print(sorted_products)
