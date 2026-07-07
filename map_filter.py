@@ -42,6 +42,10 @@ print(result)
 '''
 
 
+'''
+
+
+
 #filter exe 
 
 #1 
@@ -91,4 +95,27 @@ students = [
 {"name": "Rina", "grade": 80, "attendance": 70},
 {"name": "Eli", "grade": 75, "attendance": 85}]
 result = list(filter(lambda x:x["grade"] >=70 and x["attendance"]>=80 , students))
+
 print(result)
+'''
+
+#reduce
+#1 reduce retern one final val becouse its combines all elements to one result 
+
+#2 
+#firest will multiply 2*3 = 6 
+# second will multiply by 6* 4= 24  
+
+#3
+# map chenges all elments , 
+#reduce when you want one result 
+
+#4
+#x= its runing a total 
+#y = is the new value your adding
+
+
+#5
+# reduce when its a simply action to do like in a lambda func
+#for loop when more comlex action
+
